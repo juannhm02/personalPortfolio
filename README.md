@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# 🌟 Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es un portafolio personal desarrollado en React. Su objetivo es presentar mis habilidades, experiencia y proyectos de manera profesional y visualmente atractiva. Es una aplicación completamente responsive, diseñada para verse y funcionar bien en cualquier dispositivo, con una estética moderna y una interfaz fácil de navegar.
 
-## Available Scripts
+## 🛠️ Tecnologías Utilizadas
 
-In the project directory, you can run:
+- **React**: Librería principal para construir la interfaz.
+- **CSS3**: Para el diseño y la responsividad.
+- **EmailJS**: Para el envío de mensajes desde el formulario de contacto.
+- **JavaScript**: Lenguaje de programación principal para la lógica del proyecto.
 
-### `npm start`
+## ✨ Características
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Sección "Sobre mí"**: Descripción personal y profesional.
+- **Sección de Habilidades**: Presenta mis habilidades técnicas, tanto en desarrollo front-end como en otros campos relacionados.
+- **Sección de Proyectos**: Portafolio de proyectos destacables, con detalles y links a los repositorios o demos.
+- **Sección de Contacto**: Formulario para que los visitantes puedan ponerse en contacto directamente, con notificaciones de éxito y validación de campos.
+- **Animaciones y transiciones suaves**: Mejoran la experiencia de usuario y dan una estética moderna.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📜 Scripts Disponibles
 
-### `npm test`
+En el directorio del proyecto, puedes ejecutar:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `npm start`: Inicia la aplicación en modo de desarrollo. Abre [http://localhost:3000](http://localhost:3000) para verla en tu navegador.
+- `npm run build`: Construye la aplicación para producción en la carpeta `build`. Optimiza React para el mejor rendimiento en producción.
 
-### `npm run build`
+## ✉️ Configuración del Formulario de Contacto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+El formulario de contacto está configurado para enviar mensajes a través de EmailJS. Para activar esta función:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Crea una cuenta en EmailJS y configura un servicio y plantilla.
+2. Obtén tu Service ID, Template ID y Public Key.
+3. Reemplaza estos valores en el código fuente para habilitar el envío de correos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Despliegue
 
-### `npm run eject`
+Este proyecto se puede desplegar en varias plataformas de hosting de aplicaciones web, tales como:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Vercel**: Ideal para proyectos en React, con despliegue automático desde GitHub.
+- **Netlify**: Otra excelente opción con funciones de CI/CD para React.
+- **GitHub Pages**: Alternativa rápida para desplegar aplicaciones estáticas.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para más detalles sobre el despliegue, consulta la documentación de la plataforma específica o la documentación de Create React App sobre despliegue.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📸 Capturas de Pantalla
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Página de Inicio
 
-## Learn More
+![Página de Inicio](src/assets/readme/inicio.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Sección "Sobre mí"
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Sección "Sobre mí"](src/assets/readme/about_me.png)
 
-### Code Splitting
+### Sección de Habilidades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Sección de Habilidades](src/assets/readme/skills.png)
 
-### Analyzing the Bundle Size
+### Sección de Proyectos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Sección de Proyectos](src/assets/readme/projects.png)
 
-### Making a Progressive Web App
+### Sección de Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Sección de Contacto](src/assets/readme/contact.png)
 
-### Advanced Configuration
+## 📚 Aprende Más
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Documentación de Create React App](https://create-react-app.dev/docs/getting-started/).
+- [Documentación de React](https://reactjs.org/docs/getting-started.html).
+- [Documentación de EmailJS](https://www.emailjs.com/docs/).
 
-### Deployment
+## 🤝 Contribuciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este es un proyecto personal, pero cualquier sugerencia o mejora es bienvenida. Si tienes alguna idea o encuentras algún problema, siéntete libre de abrir un issue o contactarme directamente.
