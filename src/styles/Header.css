@@ -1,0 +1,69 @@
+/* Header Styles */
+.header {
+  background-color: #0d1b2a;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo-image {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: end;
+  padding-right: 40px;
+  width: 1000%;
+  gap: 20px;
+}
+
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.nav-item.active {
+  color: #00b4d8;
+  font-weight: bold;
+  border-bottom: 2px solid #00b4d8;
+}
+
+/* Menú de hamburguesa para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #0d1b2a;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+}
