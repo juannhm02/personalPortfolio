@@ -11,6 +11,7 @@ Este proyecto es un portafolio personal desarrollado en React. Su objetivo es pr
 
 ## ✨ Características
 
+- **Página de Inicio**: Introducción y bienvenida al portafolio, con enlaces rápidos a las secciones principales.
 - **Sección "Sobre mí"**: Descripción personal y profesional.
 - **Sección de Habilidades**: Presenta mis habilidades técnicas, tanto en desarrollo front-end como en otros campos relacionados.
 - **Sección de Proyectos**: Portafolio de proyectos destacables, con detalles y links a los repositorios o demos.
