@@ -34,7 +34,7 @@ function Contact() {
         "service_qv0u4r2", // Reemplaza con tu Service ID
         "template_tx6z67o", // Reemplaza con tu Template ID
         form,
-        "H5ED4DZHm-qg4PfmS" // Reemplaza con tu Public Key
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Llama a la Public Key desde el entorno
       )
       .then(
         (result) => {
