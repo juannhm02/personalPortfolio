@@ -1,5 +1,7 @@
 // src/components/Header.js
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Importar Link de react-router-dom
+import { motion } from "framer-motion";
 import "../styles/Header.css";
 import logoImage from "../assets/Logo blanco.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -20,9 +22,22 @@ function Header({ activeSection, onSectionClick }) {
 
   return (
     <header className="header">
-      <div className="logo">
-        <img src={logoImage} alt="Logo" className="logo-image" />
-      </div>
+      <motion.div
+        className="logo"
+        whileHover={{ scale: 1.1 }} // Efecto hover en el logo
+        whileTap={{ scale: 0.9 }} // Efecto al hacer clic en el logo
+      >
+        <Link to="/">
+          <motion.img
+            src={logoImage}
+            alt="Logo"
+            className="logo-image"
+            initial={{ opacity: 0, y: -20 }} // Iniciar con opacidad baja y desplazado hacia arriba
+            animate={{ opacity: 1, y: 0 }} // Animar hacia opacidad completa y posición original
+            transition={{ duration: 0.5 }} // Duración de la animación de entrada
+          />
+        </Link>
+      </motion.div>
       <div className="menu-icon" onClick={toggleMenu}>
         <i className="fas fa-bars"></i>
       </div>
