@@ -1,76 +1,76 @@
 # 🌟 Personal Portfolio
 
-Este proyecto es un portafolio personal desarrollado en React. Su objetivo es presentar mis habilidades, experiencia y proyectos de manera profesional y visualmente atractiva. Es una aplicación completamente responsive, diseñada para verse y funcionar bien en cualquier dispositivo, con una estética moderna y una interfaz fácil de navegar.
+This project is a personal portfolio developed in React. Its goal is to present my skills, experience, and projects in a professional and visually appealing manner. It is a fully responsive application, designed to look and work well on any device, with a modern aesthetic and an easy-to-navigate interface.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-- **React**: Librería principal para construir la interfaz.
-- **CSS3**: Para el diseño y la responsividad.
-- **EmailJS**: Para el envío de mensajes desde el formulario de contacto.
-- **JavaScript**: Lenguaje de programación principal para la lógica del proyecto.
+- **React**: Main library for building the interface.
+- **CSS3**: For design and responsiveness.
+- **EmailJS**: For sending messages from the contact form.
+- **JavaScript**: Main programming language for the project logic.
 
-## ✨ Características
+## ✨ Features
 
-- **Página de Inicio**: Introducción y bienvenida al portafolio, con enlaces rápidos a las secciones principales.
-- **Sección "Sobre mí"**: Descripción personal y profesional.
-- **Sección de Habilidades**: Presenta mis habilidades técnicas, tanto en desarrollo front-end como en otros campos relacionados.
-- **Sección de Proyectos**: Portafolio de proyectos destacables, con detalles y links a los repositorios o demos.
-- **Sección de Contacto**: Formulario para que los visitantes puedan ponerse en contacto directamente, con notificaciones de éxito y validación de campos.
-- **Animaciones y transiciones suaves**: Mejoran la experiencia de usuario y dan una estética moderna.
+- **Home Page**: Introduction and welcome to the portfolio, with quick links to the main sections.
+- **"About Me" Section**: Personal and professional description.
+- **Skills Section**: Presents my technical skills, both in front-end development and other related fields.
+- **Projects Section**: Portfolio of notable projects, with details and links to repositories or demos.
+- **Contact Section**: Form for visitors to get in touch directly, with success notifications and field validation.
+- **Smooth animations and transitions**: Enhance user experience and provide a modern aesthetic.
 
-## 📜 Scripts Disponibles
+## 📜 Available Scripts
 
-En el directorio del proyecto, puedes ejecutar:
+In the project directory, you can run:
 
-- `npm start`: Inicia la aplicación en modo de desarrollo. Abre [http://localhost:3000](http://localhost:3000) para verla en tu navegador.
-- `npm run build`: Construye la aplicación para producción en la carpeta `build`. Optimiza React para el mejor rendimiento en producción.
+- `npm start`: Starts the application in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `npm run build`: Builds the application for production in the `build` folder. Optimizes React for the best performance in production.
 
-## ✉️ Configuración del Formulario de Contacto
+## ✉️ Contact Form Configuration
 
-El formulario de contacto está configurado para enviar mensajes a través de EmailJS. Para activar esta función:
+The contact form is configured to send messages via EmailJS. To activate this feature:
 
-1. Crea una cuenta en EmailJS y configura un servicio y plantilla.
-2. Obtén tu Service ID, Template ID y Public Key.
-3. Reemplaza estos valores en el código fuente para habilitar el envío de correos.
+1. Create an account on EmailJS and set up a service and template.
+2. Obtain your Service ID, Template ID, and Public Key.
+3. Replace these values in the source code to enable email sending.
 
-## 🚀 Despliegue
+## 🚀 Deployment
 
-Este proyecto se puede desplegar en varias plataformas de hosting de aplicaciones web, tales como:
+This project can be deployed on various web application hosting platforms, such as:
 
-- **Vercel**: Ideal para proyectos en React, con despliegue automático desde GitHub.
-- **Netlify**: Otra excelente opción con funciones de CI/CD para React.
-- **GitHub Pages**: Alternativa rápida para desplegar aplicaciones estáticas.
+- **Vercel**: Ideal for React projects, with automatic deployment from GitHub.
+- **Netlify**: Another excellent option with CI/CD features for React.
+- **GitHub Pages**: Quick alternative for deploying static applications.
 
-Para más detalles sobre el despliegue, consulta la documentación de la plataforma específica o la documentación de Create React App sobre despliegue.
+For more details on deployment, refer to the specific platform's documentation or the Create React App documentation on deployment.
 
-## 📸 Capturas de Pantalla
+## 📸 Screenshots
 
-### Página de Inicio
+### Home Page
 
-![Página de Inicio](src/assets/readme/inicio.png)
+![Home Page](src/assets/readme/inicio.png)
 
-### Sección "Sobre mí"
+### "About Me" Section
 
-![Sección "Sobre mí"](src/assets/readme/about_me.png)
+![About Me Section](src/assets/readme/about_me.png)
 
-### Sección de Habilidades
+### Skills Section
 
-![Sección de Habilidades](src/assets/readme/skills.png)
+![Skills Section](src/assets/readme/skills.png)
 
-### Sección de Proyectos
+### Projects Section
 
-![Sección de Proyectos](src/assets/readme/projects.png)
+![Projects Section](src/assets/readme/projects.png)
 
-### Sección de Contacto
+### Contact Section
 
-![Sección de Contacto](src/assets/readme/contact.png)
+![Contact Section](src/assets/readme/contact.png)
 
-## 📚 Aprende Más
+## 📚 Learn More
 
-- [Documentación de Create React App](https://create-react-app.dev/docs/getting-started/).
-- [Documentación de React](https://reactjs.org/docs/getting-started.html).
-- [Documentación de EmailJS](https://www.emailjs.com/docs/).
+- [Create React App Documentation](https://create-react-app.dev/docs/getting-started/).
+- [React Documentation](https://reactjs.org/docs/getting-started.html).
+- [EmailJS Documentation](https://www.emailjs.com/docs/).
 
-## 🤝 Contribuciones
+## 🤝 Contributions
 
-Este es un proyecto personal, pero cualquier sugerencia o mejora es bienvenida. Si tienes alguna idea o encuentras algún problema, siéntete libre de abrir un issue o contactarme directamente.
+This is a personal project, but any suggestions or improvements are welcome. If you have any ideas or find any issues, feel free to open an issue or contact me directly.

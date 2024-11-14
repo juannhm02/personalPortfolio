@@ -54,10 +54,10 @@ function Contact() {
 
   return (
     <section id="contact" className="contact-section fade-in">
-      <h2>Contacto</h2>
+      <h2>Contact</h2>
       <div className="contact-card">
         <button className="mail" onClick={handleButtonClick}>
-          {/* Botón para abrir el formulario */}
+          {/* Button to open the form */}
           <a href="mailto:juanhmohedano123@gmail.com" rel="noopener noreferrer">
             <svg
               className="lucide lucide-mail"
@@ -82,7 +82,7 @@ function Contact() {
             <span className="name">Juan Higuera</span>
           </div>
           <div className="bottom-bottom">
-            {/* Redes sociales */}
+            {/* Social media */}
             <div className="social-links-container">
               {/* LinkedIn */}
               <a
@@ -149,7 +149,7 @@ function Contact() {
               </a>
             </div>
             <button className="button" onClick={handleButtonClick}>
-              Contáctame
+              Contact me
             </button>
           </div>
         </div>
@@ -158,7 +158,7 @@ function Contact() {
         <div className="form-card1 slide-in-right">
           <div className="form-card2">
             <form className="form" onSubmit={handleSendMessage}>
-              <p className="form-heading">¿Puedo ayudarte?</p>
+              <p className="form-heading">¿Can I help you?</p>
               {errorMessage && <p className="error-message">{errorMessage}</p>}
               <div className="form-field">
                 <input
@@ -198,7 +198,7 @@ function Contact() {
                 ></textarea>
               </div>
               <button type="submit" className="sendMessage-btn">
-                Enviar mensaje
+                Send message
               </button>
             </form>
           </div>
@@ -207,13 +207,16 @@ function Contact() {
       {showSuccessModal && (
         <div className="success-modal">
           <div className="modal-content">
-            <h3>¡Mensaje enviado con éxito!</h3>
-            <p>Gracias por ponerte en contacto. Te respondo muy pronto.</p>
+            <h3>Message sent successfully!</h3>
+            <p>
+              Thank you for getting in touch. I will get back to you very soon.
+            </p>
+
             <button
               onClick={() => setShowSuccessModal(false)}
               className="close-modal-btn"
             >
-              Cerrar
+              Close
             </button>
           </div>
         </div>

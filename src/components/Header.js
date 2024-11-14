@@ -1,6 +1,6 @@
 // src/components/Header.js
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Importar Link de react-router-dom
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { motion } from "framer-motion";
 import "../styles/Header.css";
 import logoImage from "../assets/Logo blanco.png";
@@ -9,38 +9,38 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 function Header({ activeSection, onSectionClick }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Función para alternar el estado del menú
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // // Function to toggle the menu state
+  // const toggleMenu = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
-  // Función para manejar el clic en un elemento del menú y cerrar el menú si está abierto
+  // Function to handle menu item click and close the menu if it's open
   const handleMenuItemClick = (sectionId) => {
-    onSectionClick(sectionId); // Llamar a la función para activar animación en la sección
-    if (isMenuOpen) setIsMenuOpen(false); // Cerrar el menú en dispositivos móviles
+    onSectionClick(sectionId); // Call the function to activate animation in the section
+    if (isMenuOpen) setIsMenuOpen(false); // Close the menu on mobile devices
   };
 
   return (
     <header className="header">
       <motion.div
         className="logo"
-        whileHover={{ scale: 1.1 }} // Efecto hover en el logo
-        whileTap={{ scale: 0.9 }} // Efecto al hacer clic en el logo
+        whileHover={{ scale: 1.1 }} // Hover effect on the logo
+        whileTap={{ scale: 0.9 }} // Click effect on the logo
       >
         <Link to="/">
           <motion.img
             src={logoImage}
             alt="Logo"
             className="logo-image"
-            initial={{ opacity: 0, y: -20 }} // Iniciar con opacidad baja y desplazado hacia arriba
-            animate={{ opacity: 1, y: 0 }} // Animar hacia opacidad completa y posición original
-            transition={{ duration: 0.5 }} // Duración de la animación de entrada
+            initial={{ opacity: 0, y: -20 }} // Start with low opacity and shifted up
+            animate={{ opacity: 1, y: 0 }} // Animate to full opacity and original position
+            transition={{ duration: 0.5 }} // Duration of the entrance animation
           />
         </Link>
       </motion.div>
-      <div className="menu-icon" onClick={toggleMenu}>
+      {/* <div className="menu-icon" onClick={toggleMenu}>
         <i className="fas fa-bars"></i>
-      </div>
+      </div> */}
       <nav className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
         <a
           href="#about"
@@ -48,7 +48,7 @@ function Header({ activeSection, onSectionClick }) {
           onClick={() => handleMenuItemClick("about")}
         >
           <i className="fas fa-user"></i>
-          <span>Sobre mí</span>
+          <span>About Me</span>
         </a>
         <a
           href="#skills"
@@ -56,27 +56,25 @@ function Header({ activeSection, onSectionClick }) {
           onClick={() => handleMenuItemClick("skills")}
         >
           <i className="fas fa-laptop-code"></i>
-          <span>Habilidades</span>
+          <span>Skills</span>
         </a>
         <a
-          href="#trayectoria"
+          href="#experience"
           className={`nav-item ${
-            activeSection === "trayectoria" ? "active" : ""
+            activeSection === "experience" ? "active" : ""
           }`}
-          onClick={() => handleMenuItemClick("trayectoria")}
+          onClick={() => handleMenuItemClick("experience")}
         >
           <i className="fas fa-briefcase"></i>
-          <span>Trayectoria</span>
+          <span>Career</span>
         </a>
         <a
-          href="#proyectos"
-          className={`nav-item ${
-            activeSection === "proyectos" ? "active" : ""
-          }`}
-          onClick={() => handleMenuItemClick("proyectos")}
+          href="#projects"
+          className={`nav-item ${activeSection === "projects" ? "active" : ""}`}
+          onClick={() => handleMenuItemClick("projects")}
         >
           <i className="fas fa-folder"></i>
-          <span>Proyectos</span>
+          <span>Projects</span>
         </a>
         <a
           href="#contact"
@@ -84,7 +82,7 @@ function Header({ activeSection, onSectionClick }) {
           onClick={() => handleMenuItemClick("contact")}
         >
           <i className="fas fa-envelope"></i>
-          <span>Contacto</span>
+          <span>Contact</span>
         </a>
       </nav>
     </header>

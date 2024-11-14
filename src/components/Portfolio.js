@@ -8,7 +8,7 @@ import Trayectoria from "./Trayectoria";
 import Proyectos from "./Projects";
 import Contacto from "./Contact";
 import Footer from "./Footer";
-import "../styles/App.css"; // Asegúrate de ajustar la ruta si es necesario
+import "../styles/App.css";
 
 function Portfolio() {
   const [activeSection, setActiveSection] = useState("");
@@ -75,17 +75,17 @@ function Portfolio() {
           <Skills />
         </motion.div>
         <motion.div
-          id="trayectoria"
+          id="experience"
           initial={{ opacity: 0, y: 30 }}
-          animate={animateSections.trayectoria ? { opacity: 1, y: 0 } : {}}
+          animate={animateSections.experience ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
           <Trayectoria />
         </motion.div>
         <motion.div
-          id="proyectos"
+          id="projects"
           initial={{ opacity: 0, y: 30 }}
-          animate={animateSections.proyectos ? { opacity: 1, y: 0 } : {}}
+          animate={animateSections.projects ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
           <Proyectos />

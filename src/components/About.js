@@ -13,19 +13,18 @@ function About() {
         </div>
         <div className="about-text">
           <p>
-            Soy un joven estudiante al cual le apasiona el mundo de la
-            informática y con 22 años de los cuales actualmente cuatro de ellos
-            han sido para formarme en el ámbito del Software.
+            I am a young student who is passionate about the world of computing
+            and at 22 years old, I have spent the last four years training in
+            the field of Software.
           </p>
           <p>
-            Me gustaría encontrar un empleo de Frontend, para así poder obtener
-            un conocimiento más amplio acerca de ello y poder aplicar todo
-            aquello que sé.
+            I would like to find a Frontend job to gain a broader knowledge
+            about it and apply everything I know.
           </p>
           <p>
-            Además de mucha pasión por aquello que he estudiado, también son las
-            ganas de querer comerme el mundo las que me llevan al éxito personal
-            y profesional.
+            Besides having a lot of passion for what I have studied, it is also
+            my desire to conquer the world that drives me to personal and
+            professional success.
           </p>
           <div className="cv-button-container">
             <a
@@ -53,8 +52,8 @@ function About() {
                 </svg>
               </div>
               <div className="cube">
-                <span className="side front">Descargar CV</span>
-                <span className="side top">click aquí para descargar</span>
+                <span className="side front">Download CV</span>
+                <span className="side top">click here to download</span>
               </div>
             </a>
           </div>

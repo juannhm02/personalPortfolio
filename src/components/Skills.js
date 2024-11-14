@@ -1,49 +1,52 @@
 // src/components/Skills.js
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 
 function Skills() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [shuffledImages, setShuffledImages] = useState([]);
   const [displayedImages, setDisplayedImages] = useState([]);
 
-  // Genera una lista de imágenes en orden aleatorio
-  const images = [
-    require("../assets/skills/slide1.jpg"),
-    require("../assets/skills/slide2.jpg"),
-    require("../assets/skills/slide3.jpg"),
-    require("../assets/skills/slide4.jpg"),
-    require("../assets/skills/slide5.jpg"),
-    require("../assets/skills/slide6.jpg"),
-    require("../assets/skills/slide7.jpg"),
-    require("../assets/skills/slide8.jpg"),
-    require("../assets/skills/slide9.jpg"),
-    require("../assets/skills/slide10.jpg"),
-    require("../assets/skills/slide11.jpg"),
-    require("../assets/skills/slide12.jpg"),
-    require("../assets/skills/slide13.jpg"),
-    require("../assets/skills/slide14.jpg"),
-    require("../assets/skills/slide15.jpg"),
-    require("../assets/skills/slide16.jpg"),
-    require("../assets/skills/slide17.jpg"),
-    require("../assets/skills/slide18.jpg"),
-    require("../assets/skills/slide19.jpg"),
-    require("../assets/skills/slide20.jpg"),
-    require("../assets/skills/slide21.jpg"),
-    require("../assets/skills/slide22.jpg"),
-    require("../assets/skills/slide23.jpg"),
-  ];
+  // Generate a list of images in random order
+  const images = useMemo(
+    () => [
+      require("../assets/skills/slide1.jpg"),
+      require("../assets/skills/slide2.jpg"),
+      require("../assets/skills/slide3.jpg"),
+      require("../assets/skills/slide4.jpg"),
+      require("../assets/skills/slide5.jpg"),
+      require("../assets/skills/slide6.jpg"),
+      require("../assets/skills/slide7.jpg"),
+      require("../assets/skills/slide8.jpg"),
+      require("../assets/skills/slide9.jpg"),
+      require("../assets/skills/slide10.jpg"),
+      require("../assets/skills/slide11.jpg"),
+      require("../assets/skills/slide12.jpg"),
+      require("../assets/skills/slide13.jpg"),
+      require("../assets/skills/slide14.jpg"),
+      require("../assets/skills/slide15.jpg"),
+      require("../assets/skills/slide16.jpg"),
+      require("../assets/skills/slide17.jpg"),
+      require("../assets/skills/slide18.jpg"),
+      require("../assets/skills/slide19.jpg"),
+      require("../assets/skills/slide20.jpg"),
+      require("../assets/skills/slide21.jpg"),
+      require("../assets/skills/slide22.jpg"),
+      require("../assets/skills/slide23.jpg"),
+    ],
+    []
+  );
 
-  // Inicializa el array de imágenes aleatorias
+  // Initialize the array of random images
   useEffect(() => {
     const shuffled = [...images].sort(() => Math.random() - 0.5);
     setShuffledImages(shuffled);
     setDisplayedImages([]);
-  }, []);
+  }, [images]);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => {
-        // Si hemos mostrado todas las imágenes, reinicia el ciclo con un nuevo orden aleatorio
+        // If all images have been displayed, restart the cycle with a new random order
         if (displayedImages.length === images.length) {
           const newShuffled = [...images].sort(() => Math.random() - 0.5);
           setShuffledImages(newShuffled);
@@ -51,24 +54,24 @@ function Skills() {
           return 0;
         }
 
-        // Avanza al siguiente índice y registra la imagen mostrada
+        // Move to the next index and record the displayed image
         const nextIndex = (prevIndex + 1) % shuffledImages.length;
         setDisplayedImages([...displayedImages, shuffledImages[nextIndex]]);
         return nextIndex;
       });
     }, 3000);
     return () => clearInterval(interval);
-  }, [shuffledImages, displayedImages]);
+  }, [shuffledImages, displayedImages, images]);
 
   return (
     <section id="skills" className="skills-section fade-in">
       <div className="skills-container">
-        {/* Sección de habilidades a la izquierda */}
+        {/* Skills section on the left */}
         <div className="skills-content">
           <h2>Skills</h2>
 
           <div className="category">
-            <h3>Lenguajes de Programación y Frameworks</h3>
+            <h3>Programming Languages and Frameworks</h3>
             <div className="badges">
               <img
                 src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
@@ -118,7 +121,7 @@ function Skills() {
           </div>
 
           <div className="category">
-            <h3>Bases de Datos</h3>
+            <h3>Databases</h3>
             <div className="badges">
               <img
                 src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white"
@@ -136,7 +139,7 @@ function Skills() {
           </div>
 
           <div className="category">
-            <h3>Herramientas y Otros</h3>
+            <h3>Tools and Others</h3>
             <div className="badges">
               <img
                 src="https://img.shields.io/badge/Sublime_Text-FF9800?style=for-the-badge&logo=sublime-text&logoColor=white"
@@ -170,13 +173,13 @@ function Skills() {
           </div>
         </div>
 
-        {/* Slider de imágenes a la derecha */}
+        {/* Image slider on the right */}
         <div className="gallery">
-          <h3>Galería de interés</h3>
+          <h3>Gallery of Interest</h3>
           <div className="gallery-slider">
             <img
               src={shuffledImages[currentImageIndex]}
-              alt={`Ponencia ${currentImageIndex + 1}`}
+              alt={`Presentation ${currentImageIndex + 1}`}
               className="slider-image"
             />
           </div>

@@ -115,7 +115,7 @@ function Trayectoria() {
 
   return (
     <section id="trayectoria" className="trayectoria-section fade-in">
-      <h2 className="trayectoria-title">Trayectoria</h2>
+      <h2 className="trayectoria-title">Career</h2>
       <div className="experiencia-grid">
         {experiences.map((experience, index) => (
           <div className="flip-card" key={index}>

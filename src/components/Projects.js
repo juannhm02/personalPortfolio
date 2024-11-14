@@ -17,14 +17,14 @@ const projects = [
   {
     title: "Mailman Actividades Extracurriculares",
     description:
-      "Gestión de un sistema de mailing entre universidades para actividades extracurriculares. Muestra, gracias a un menú por terminal, el resultado.",
+      "Management of a mailing system between universities for extracurricular activities. Displays the result through a terminal menu.",
     icons: [cPlusPlusIcon],
     repoLink:
       "https://github.com/juannhm02/MailingActividadesExtracurriculares",
     structure: [
       "📁 .vscode",
       "📁 Entities",
-      "📁 Vistas",
+      "📁 Views",
       "📁 obj",
       "📄 Makefile",
       "📄 README.md",
@@ -34,7 +34,7 @@ const projects = [
   },
   {
     title: "Gestor de máquinas",
-    description: "App creada para reserva de clústers en C++.",
+    description: "App created for cluster reservation in C++.",
     icons: [cPlusPlusIcon],
     repoLink: "https://github.com/juannhm02/Gestor-de-maquinas",
     structure: [
@@ -51,7 +51,7 @@ const projects = [
   {
     title: "Countrle",
     description:
-      "Countrle es una aplicación web basada en Wordle. Los jugadores se desafían a adivinar conceptos relacionados con países.",
+      "Countrle is a web application based on Wordle. Players challenge themselves to guess concepts related to countries.",
     icons: [djangoIcon, reactIcon],
     repoLink: "https://github.com/juannhm02/Countrle",
     webLink: "https://countrle.netlify.app/",
@@ -71,7 +71,7 @@ const projects = [
   {
     title: "UCOLib",
     description:
-      "Aplicación móvil para creación y gestión de servicios del lado del servidor. Ideal para aplicaciones empresariales y servicios web.",
+      "Mobile application for creating and managing server-side services. Ideal for enterprise applications and web services.",
     icons: [nestIcon, tsIcon, dockerIcon],
     repoLinkBack: "https://github.com/juannhm02/UcoLib.git",
     repoLinkFront: "https://github.com/juannhm02/APP-ISMFront.git",
@@ -90,9 +90,8 @@ const projects = [
     ],
   },
   {
-    title: "Clasificación Inmuebles y Evaluación Inmigración",
-    description:
-      "Metodología CommonKADS, construcción de sistemas de conocimiento.",
+    title: "Clasificación de Inmuebles y Evaluación de Inmigración",
+    description: "CommonKADS methodology, construction of knowledge systems.",
     icons: [pythonIcon],
     repoLink: "https://github.com/juannhm02/trabajoClasificacion",
     structure: [
@@ -107,8 +106,8 @@ const projects = [
     ],
   },
   {
-    title: "Reserva de pistas",
-    description: "Gestor de reservas de pistas de baloncesto.",
+    title: "Reserva de Pistas",
+    description: "Basketball court reservation manager.",
     icons: [javaIcon, jsIcon, htmlIcon, cssIcon],
     repoLink: "https://github.com/juannhm02/ReservaPistas",
     structure: [
@@ -125,8 +124,8 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="proyectos" className="projects fade-in">
-      <h2>Proyectos</h2>
+    <section id="projects" className="projects fade-in">
+      <h2>Projects</h2>
       <div className="cardContainer">
         {projects.map((project, index) => (
           <div className="card" key={index}>
@@ -152,7 +151,7 @@ function Projects() {
               <div className="row row1">
                 {project.repoLinkBack && (
                   <div className="item">
-                    <span className="big-text">Repo Backend</span>
+                    <span className="big-text">Backend Repo</span>
                     <span className="regular-text">
                       <a
                         href={project.repoLinkBack}
@@ -166,14 +165,14 @@ function Projects() {
                           height="15"
                           alt="link icon"
                         />{" "}
-                        Accede aquí
+                        Access here
                       </a>
                     </span>
                   </div>
                 )}
                 {project.repoLinkFront && (
                   <div className="item">
-                    <span className="big-text">Repo Frontend</span>
+                    <span className="big-text">Frontend Repo</span>
                     <span className="regular-text">
                       <a
                         href={project.repoLinkFront}
@@ -187,7 +186,7 @@ function Projects() {
                           height="15"
                           alt="link icon"
                         />{" "}
-                        Accede aquí
+                        Access here
                       </a>
                     </span>
                   </div>
@@ -196,7 +195,7 @@ function Projects() {
                   !project.repoLinkBack &&
                   !project.repoLinkFront && (
                     <div className="item">
-                      <span className="big-text">Repositorio</span>
+                      <span className="big-text">Repository</span>
                       <span className="regular-text">
                         <a
                           href={project.repoLink}
@@ -210,7 +209,7 @@ function Projects() {
                             height="15"
                             alt="link icon"
                           />{" "}
-                          Accede aquí
+                          Access here
                         </a>
                       </span>
                     </div>
@@ -231,14 +230,14 @@ function Projects() {
                           height="15"
                           alt="link icon"
                         />{" "}
-                        Accede aquí
+                        Access here
                       </a>
                     </span>
                   </div>
                 )}
               </div>
 
-              {/* Botón de estructura del proyecto */}
+              {/* Project structure button */}
               <div className="relative group inline-block">
                 <div className="project-structure-button">
                   <svg
@@ -257,10 +256,10 @@ function Projects() {
                       d="M16.2 2H1.8C0.81 2 0 2.77143 0 3.71429V12.2857C0 13.2286 0.81 14 1.8 14H16.2C17.19 14 18 13.2286 18 12.2857V3.71429C18 2.77143 17.19 2 16.2 2Z"
                     ></path>
                   </svg>
-                  <p>Estructura de carpetas</p>
+                  <p>Folder Structure</p>
                 </div>
 
-                {/* Lista desplegable de la estructura */}
+                {/* Dropdown list of the structure */}
                 <div className="project-structure-dropdown">
                   <ul className="p-4 space-y-1">
                     {project.structure.map((item, idx) => (
