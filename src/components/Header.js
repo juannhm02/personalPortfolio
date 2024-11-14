@@ -59,11 +59,11 @@ function Header({ activeSection, onSectionClick }) {
           <span>Skills</span>
         </a>
         <a
-          href="#experience"
+          href="#trayectoria"
           className={`nav-item ${
-            activeSection === "experience" ? "active" : ""
+            activeSection === "trayectoria" ? "active" : ""
           }`}
-          onClick={() => handleMenuItemClick("experience")}
+          onClick={() => handleMenuItemClick("trayectoria")}
         >
           <i className="fas fa-briefcase"></i>
           <span>Career</span>
