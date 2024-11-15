@@ -57,6 +57,10 @@ For more details on deployment, refer to the specific platform's documentation o
 
 ![Skills Section](src/assets/readme/skills.png)
 
+### Career Section
+
+![Career Section](src/assets/readme/career.png)
+
 ### Projects Section
 
 ![Projects Section](src/assets/readme/projects.png)
