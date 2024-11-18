@@ -31,8 +31,8 @@ function Contact() {
     // Usar EmailJS para enviar el correo
     emailjs
       .sendForm(
-        "service_qv0u4r2", // Reemplaza con tu Service ID
-        "template_tx6z67o", // Reemplaza con tu Template ID
+        "service_qv0u4r2",
+        "template_tx6z67o",
         form,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Llama a la Public Key desde el entorno
       )
@@ -163,7 +163,7 @@ function Contact() {
               <div className="form-field">
                 <input
                   required
-                  placeholder="Nombre completo"
+                  placeholder="Full Name"
                   className="input-field"
                   type="text"
                   name="from_name"
@@ -172,7 +172,7 @@ function Contact() {
               <div className="form-field">
                 <input
                   required
-                  placeholder="Email"
+                  placeholder="E-mail"
                   className="input-field"
                   type="email"
                   name="reply_to"
@@ -181,7 +181,7 @@ function Contact() {
               <div className="form-field">
                 <input
                   required
-                  placeholder="Motivo"
+                  placeholder="Subject"
                   className="input-field"
                   type="text"
                   name="subject"
@@ -190,7 +190,7 @@ function Contact() {
               <div className="form-field">
                 <textarea
                   required
-                  placeholder="Mensaje"
+                  placeholder="Message"
                   cols="30"
                   rows="3"
                   className="input-field"
